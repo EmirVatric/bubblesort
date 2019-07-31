@@ -1,8 +1,7 @@
 class BubbleSortBy
 
     def bubble_sort_by array
-      puts "Sorted Array:"
-        puts array.to_s
+
         i = 0
         unless i == (array.length*2)-2 
             array.inject do |element1, element2| 
@@ -11,14 +10,15 @@ class BubbleSortBy
                 element2 
             end
         end
-      puts "Unsorted Array:"
         puts array.to_s
     end
 
 end
     
-givenArr= ["hi", "hey", "hello", "Greetings"]
+
+givenArr= ["hey", "hi", "Greetings", "hello"]
 test = BubbleSortBy.new
+
 
 test.bubble_sort_by(givenArr) do |left,right|
     left.length - right.length
