@@ -1,5 +1,3 @@
-
-
 def bubble_sort_by (array)
 
     i = 0
